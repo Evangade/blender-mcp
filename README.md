@@ -12,6 +12,8 @@
 </div>
 <hr>
 
+# 这是一个用于练习Git的仓库
+
 # BlenderMCP - Blender Model Context Protocol Integration
 
 BlenderMCP connects Blender to Claude AI through the Model Context Protocol (MCP), allowing Claude to directly interact with and control Blender. This integration enables prompt assisted 3D modeling, scene creation, and manipulation.
