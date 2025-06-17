@@ -11,6 +11,7 @@
 
 </div>
 <hr>
+# 这是一个用于练习Git的仓库
 
 # BlenderMCP - Blender Model Context Protocol Integration
 
