@@ -19,7 +19,7 @@ def main():
     args = parser.parse_args()
 
     # 调用服务端主函数并传入参数
-    # 假设 server_main 可以接收这些参数
+    # server_main 可以接收这些参数
     server_main(host=args.host, port=args.port, debug=args.debug)
 
 

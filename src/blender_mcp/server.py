@@ -12,6 +12,7 @@ import os
 from pathlib import Path
 import base64
 from urllib.parse import urlparse
+import logging
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, 
@@ -939,9 +940,15 @@ def asset_creation_strategy() -> str:
 
 # Main execution
 
-def main():
-    """Run the MCP server"""
-    mcp.run()
+def main(host="0.0.0.0", port=1005, debug=None):    # Initialize and configure the MCP server
+    mcp = BlenderMCPServer(host=host, port=int(port))
+    
+    # Set up logging configuration if debug mode is enabled
+    if debug:
+        logging.basicConfig(level=logging.DEBUG)
+    
+    # Start the server
+    mcp.start()
 
 if __name__ == "__main__":
     main()
