@@ -12,17 +12,16 @@ def main():
                         help='服务端监听地址 (默认: localhost)')
     parser.add_argument('--port', type=int, default=8080,
                         help='服务端监听端口 (默认: 8080)')
-
+    parser.add_argument('--debug', action='store_true',
+                        help='启用调试模式')
 
     # 解析命令行参数
     args = parser.parse_args()
 
     # 调用服务端主函数并传入参数
-    # 假设 server_main 可以接收这些参数
-    server_main()
-"""
+    # server_main 可以接收这些参数
+    server_main(host=args.host, port=args.port, debug=args.debug)
 
-"""
 
 if __name__ == "__main__":
     main()
